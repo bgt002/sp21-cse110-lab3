@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<style>
+.myDiv {
+    border: 2px outset black;
+    background-color: lightblue;    
+    text-align: center;
+}
+.myDiv2{
+    border: 2px outset green;
+    background-color: lightblue;    
+    text-align: center;
+}
+.myDiv3{
+    border: 2px outset purple;
+    background-color: lightblue;    
+    text-align: center;
+}
+
+</style>
+<html lang=”en”>
+    <head>
+        <title>Journal Entries</title>
+        <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+    </head>
+
+    <body>
+        <meta name="description" content="Brian's CSE 110 Lab 2">
+        <main>
+            <section>
+                <header>
+                    <div class="myDiv">
+                        <h1>Journal Entry #1</h1>
+                        <h2>The day in the life of Brian Tran</h2>
+                        <h3>April 8, 2021</h3>
+                    </div>
+                    <center><p>Brian begins his day by <em><strong>brushing his teeth.</strong></em> (EMPHASIS ON THIS BECAUSE THIS IS IMPORTANT! YOU MUST BRUSH YOUR TEETH). 
+                    Then depending on the day, he goes on a run. After the run, he does the one punch man workout with 100 push ups, sit ups, and squats to get</center> that 
+                    <b>summer bod</b> 8). After that like any normal college student, he <i>attends</i> his live lectures. Now im going to break it here</p> <br>
+                    <p>to go to my next paragraph.. which won't have mmuch because I am very boring :)</p>
+                </header>
+            </section>
+
+            <hr>
+
+            <section>
+                <header>
+                    <div class="myDiv2">
+                        <h1>Journal Entry #2</h1>
+                        <h2>What Inspires Brian Tran?</h2>
+                        <h3>April 9, 2021</h3>
+                    </div>
+                </header>
+                <center><p>There are a lot of people who inspire Brian, but his most inspirational has to be none other than, <span style="color:gold;font-weight:bold">Kobe Bryant</span>.</p></center>
+                <center><img src="Getty_Kobe_Bryant.jpg" alt="Kobe Bryant" style="width:500px;height:300px;"</center>
+
+                <center><iframe width="500" height="300" src="https://www.youtube.com/embed/Mi087miyyz4"></iframe></center>
+            </section>
+
+            <hr>
+            <section>
+                <header>
+                    <div class="myDiv3">
+                        <h1>Journal Entry #3</h1>
+                        <h2>What motivates Brian Tran?</h2>
+                        <h3>April 10, 2021</h3>
+                    </div>
+                    <p>here are a list of things that motivates Brian:</p>
+                    <ul type="circle">
+                        <li>His Friends </li>
+                        <li>His Family</li>
+                        <li>Music, Such as this: <audio controls><source src ="Traverse Town.mp3" type="audio/mp3"></audio></li>
+                    </ul>
+                    <p>here they are ordered:</p>
+                    <ol>
+                        <li>His Family</li>
+                        <li>His Friends</li>
+                        <li>Music (See Above)</li>
+                    </ol>
+                </header>
+            </section>
+        </main>   
+        
+        <hr>
+
+        <form>
+            <fieldset>
+                <p>Lets take a quick survey:</p>
+                <h2>Insert today's date:</h2>
+                <label for="Date">Date:</label>
+                <input type="date" id="Date" name="Date">
+
+                <h2>What is your First and Last name?</h2>
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname">
+
+                <h2>What is your Gender?</h2>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+
+                <h2>Which of the following is something you own? (Select all that apply)</h2>
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                <label for="vehicle1"> Dog</label><br>
+                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                <label for="vehicle2"> Cat</label><br>
+                <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                <label for="vehicle3"> Fish</label>
+
+                <h2>Out of these cars, what would you rather have and why?</h2>
+                <label for="cars">Choose a car:</label>
+                <select name="cars" id="cars">
+                    <option value="Tesla">Tesla</option>
+                    <option value="Camry">Camry</option>
+                    <option value="WRX">WRX</option>
+                    <option value="Lamborghini">Lamborghini</option>
+                </select>
+                <br>
+                <textarea id="why this car" name="why" rows="5" cols="50"></textarea>
+
+                <h2>Last but not least, where are you from?(if listed)</h2>
+                <label for="locations">Choose your Location from the list:</label>
+                <input list="location" name="location" id="locations">
+                <datalist id="location">
+                    <option value="North America">
+                    <option value="South America">
+                    <option value="Africa">
+                    <option value="Asia">
+                    <option value="Europe">
+                    <option value="Australia">
+                    <option valuie="Antarctica">
+                </datalist>
+            </fieldset>
+        </form>
+        <button type="button" onclick="alert('Submitted!')">Click me to submit</button>
+        
+        <hr>
+
+        <footer>
+            <p>Author: Brian Tran</p>
+            <p>Referenes:</p>
+        </footer>
+        
+        <nav>
+            <a href="https://www.youtube.com/watch?v=mmiWjG0N21w">Taverse Town Music</a> |
+            <a href="https://www.gettyimages.com/detail/news-photo/kobe-bryant-of-the-los-angeles-lakers-celebrates-after-the-news-photo/102186206?adppopup=true">Kobe Image</a> |
+            <a href="https://www.youtube.com/watch?v=Mi087miyyz4">Kobe Video</a>
+        </nav>
+        <details>
+            <summary>OPEN IF YOU ARE COOL</summary>
+            <p>Yeah, you're pretty cool man.</p>
+        </details>
+        
+    </body>
+    </html>
