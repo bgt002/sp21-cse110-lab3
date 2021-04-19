@@ -146,3 +146,49 @@ div.relative{
     padding: 25px 0;
     font-size: 35px;
 }
+
+#highlightedtext{
+    background-color: red;
+}
+
+*{
+    background-color: white; /*unversial white so that it doesn't ruin anything, jk it still did but im lazy*/
+}
+
+p3{
+    background-color: turquoise;
+}
+
+a[target]{
+    background-color: coral;
+}
+a[target=_top]{
+    background-color: magenta;
+}
+asdf:hover{
+    background-color: yellow;
+}
+woopty, doo{
+    background-color: blue;
+    color: white;
+}
+
+div c{
+    background-color: yellow;
+}
+
+div > d{
+    background-color: orange;
+}
+
+div + sib{
+    background-color: moccasin;
+}
+
+div ~ dog{
+    background-color: yellow;
+}
+
+c, dog{
+    background-color: wheat; 
+}
