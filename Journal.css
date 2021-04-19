@@ -1,53 +1,57 @@
 body {
     background-color: rgb(255,255,255);
-  }
-  
-  h1 {
+}
+
+h1 {
     color: hsl(0,0,0);
     text-align: center;
     font-size: 30px;
-  }
+}
 
-  h2 {
-      color: rgb(0, 0, 0);
-      text-align: left;
-      font-size: 2pc;
-  }
+h2 {
+    color: rgb(0, 0, 0);
+    text-align: left;
+    font-size: 2pc;
+}
 
-  h4 {
+h4 {
     color: rgb(0, 255, 0);
     text-align: center;
     font-size: .75cm;
 }
-  
-  h3{
-      color: yellow;
-      text-align: center;
-      font-size: 3ch;
-  }
-  
-  h5{
-      color:rgb(255,255,255);
-      text-align:right;
-      font-size:1ch
-  }
-  p {
+
+h3{
+    color: yellow;
+    text-align: center;
+    font-size: 3ch;
+}
+
+h5{
+    color:rgb(255,255,255);
+    text-align:right;
+    font-size:1ch
+}
+p {
     font-family: lucida;
     font-size: 5ex;
-  }
+}
 
-  div{
-      margin:30px;
-      border: 1px solid;
-  }
-  
-  .myDiv3{
-    border: 2px outset purple;
-    background-color: lightblue;    
+div{
+    margin:30px;
+    border: 1px solid;
+}
+
+.myDiv3{
+    border-style: dotted;
+    border-color: purple;
+    border-width: 10px;
+    border-radius: 10px;
+    background-color: wheat;    
     margin-top: 20px;
     margin-right: 20px;
     margin-left: 20px;
     margin-bottom: 20px;
+    text-decoration: underline;
 }
 
 .myDiv2{
@@ -57,7 +61,88 @@ body {
 }
 
 .myDiv {
+    padding-top: 0;
+    padding-right: 30px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    background-color: lightblue;
     border: 2px outset black;
-    background-color: lightblue;    
+}
+
+.myDiv5 {
+    padding: 20px;
+    border: 1px;
+}
+
+p2 {color: red;}
+
+p.ex1 {display:none;}
+p2.ex2 {display: block;}
+
+
+@media only screen and (max-width: 1000px) { /*makes the page go black when there are less than 1000px*/
+    body {
+      background-color: black;
+    }
+}
+
+div.static{
+    position: static;
+    border: 3px solid;
+}
+
+div.relative{
+    position:relative;
+    left: 30px;
+    border: 3px solid;
+}
+.myDiv6 {
+    background-color: green;
+    color: white;
     text-align: center;
+}
+.myDiv6:hover{
+    background-color:pink;
+}
+
+.myDiv6:active{
+    background-color: blue;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: purple;
+}
+
+.flex-container > div {
+    background-color: white;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+.item1 { grid-area: a; }
+.item2 { grid-area: b; }
+.item3 { grid-area: c; }
+.item4 { grid-area: d; }
+.item5 { grid-area: e; }
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+      'b a a a a a'
+      'b d d d c c'
+      'b e e e c c';
+    grid-gap: 20px;
+    background-color: pink;
+    padding: 10px;
+}
+.grid-container > div {
+    background-color: white;
+    text-align: center;
+    padding: 25px 0;
+    font-size: 35px;
 }
