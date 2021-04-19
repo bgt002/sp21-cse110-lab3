@@ -1,1 +1,1 @@
-https://bgt002.github.io/Lab2/
+https://bgt002.github.io/sp21-cse110-lab3/
